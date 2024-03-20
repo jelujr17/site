@@ -5,6 +5,39 @@
 /*
 * Contexts
 */
+
+/* Estilos del submenú */
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: none;
+}
+
+/* Establecer la posición del submenú al pasar el cursor sobre el elemento padre */
+.rd-nav-item:hover .sub-menu {
+    display: block;
+    opacity: 1;
+}
+
+/* Estilos del elemento del submenú */
+.sub-menu li {
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambiar color del fondo al pasar el cursor */
+.sub-menu li:hover {
+    background-color: #f0f0f0;
+}
+
 .post-corporate.post-corporate-img-bg, .section-main-bunner, .context-dark, .bg-gray-600, .bg-gray-700, .bg-gray-800, .bg-primary, .bg-pink, .bg-secondary, .bg-secondary-2, .bg-green,
 .post-corporate.post-corporate-img-bg h1,
 .section-main-bunner h1,
