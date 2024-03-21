@@ -1,0 +1,100 @@
+/* Estilo para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Familia de fuentes */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+}
+
+/* Estilo para el encabezado */
+.page-header {
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 20px 0; /* Espaciado interno */
+}
+
+/* Estilo para el contenido de la sección de paralaje */
+.parallax-container {
+    position: relative; /* Posición relativa */
+    overflow: hidden; /* Ocultar desbordamiento */
+}
+
+.parallax-content {
+    padding: 100px 0; /* Espaciado interno */
+    text-align: center; /* Alineación centrada */
+    color: #ffffff; /* Color de texto */
+}
+
+/* Estilo para el contenido de la sección */
+.section {
+    padding: 50px 0; /* Espaciado interno */
+}
+
+/* Estilo para los títulos de las secciones */
+.section h3 {
+    margin-bottom: 30px; /* Margen inferior */
+}
+
+/* Estilo para las cajas de iconos */
+.box-icon-classic {
+    margin-bottom: 30px; /* Margen inferior */
+}
+
+.box-icon-inner {
+    display: flex; /* Display flex para alinear ícono y texto */
+    align-items: center; /* Alineación vertical centrada */
+    justify-content: center; /* Alineación horizontal centrada */
+    width: 100px; /* Ancho del contenedor del ícono */
+    height: 100px; /* Altura del contenedor del ícono */
+    border: 2px solid #007bff; /* Borde */
+    border-radius: 50%; /* Borde redondeado para crear un círculo */
+}
+
+/* Estilo para los textos dentro de las cajas de iconos */
+.box-icon-caption {
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilo para los enlaces dentro de las cajas de iconos */
+.box-icon-caption a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.box-icon-caption a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilo para el formulario de contacto */
+.rd-form {
+    margin-top: 50px; /* Margen superior */
+}
+
+.form-wrap {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.form-label {
+    display: block; /* Convertir etiqueta en bloque */
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+.form-input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.button {
+    display: inline-block; /* Convertir botón en bloque */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor apuntador */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}

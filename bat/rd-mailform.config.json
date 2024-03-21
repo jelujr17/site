@@ -2,7 +2,7 @@
   "useSmtp": false,
   "host": "stmp.gmail.com",
   "port": 465,
-  "username": "demo@gmail.com",
-  "password": "demopassword",
-  "recipientEmail": "demo@gmail.com"
+  "username": "mario@jaquemate.es",
+  "password": "Infor_Matica_7",
+  "recipientEmail": "marioml7902@gmail.com"
 }
