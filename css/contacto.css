@@ -1,100 +1,71 @@
-/* Estilo para el cuerpo del documento */
-body {
-    font-family: Arial, sans-serif; /* Familia de fuentes */
-    margin: 0; /* Eliminar márgenes */
-    padding: 0; /* Eliminar relleno */
-}
-
-/* Estilo para el encabezado */
-.page-header {
-    background-color: #f8f9fa; /* Color de fondo */
-    padding: 20px 0; /* Espaciado interno */
-}
-
-/* Estilo para el contenido de la sección de paralaje */
-.parallax-container {
-    position: relative; /* Posición relativa */
-    overflow: hidden; /* Ocultar desbordamiento */
-}
-
-.parallax-content {
-    padding: 100px 0; /* Espaciado interno */
-    text-align: center; /* Alineación centrada */
-    color: #ffffff; /* Color de texto */
-}
-
-/* Estilo para el contenido de la sección */
-.section {
-    padding: 50px 0; /* Espaciado interno */
-}
-
-/* Estilo para los títulos de las secciones */
-.section h3 {
-    margin-bottom: 30px; /* Margen inferior */
-}
-
-/* Estilo para las cajas de iconos */
 .box-icon-classic {
-    margin-bottom: 30px; /* Margen inferior */
+	max-width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
-.box-icon-inner {
-    display: flex; /* Display flex para alinear ícono y texto */
-    align-items: center; /* Alineación vertical centrada */
-    justify-content: center; /* Alineación horizontal centrada */
-    width: 100px; /* Ancho del contenedor del ícono */
-    height: 100px; /* Altura del contenedor del ícono */
-    border: 2px solid #007bff; /* Borde */
-    border-radius: 50%; /* Borde redondeado para crear un círculo */
+.box-icon-classic>*+* {
+	margin-top: 18px;
 }
 
-/* Estilo para los textos dentro de las cajas de iconos */
-.box-icon-caption {
-    margin-top: 20px; /* Margen superior */
+.box-icon-classic .box-icon-caption p {
+	color: rgba(21, 21, 21, 0.6);
 }
 
-/* Estilo para los enlaces dentro de las cajas de iconos */
-.box-icon-caption a {
-    color: #007bff; /* Color del enlace */
-    text-decoration: none; /* Sin subrayado */
+.box-icon-classic:hover .decorate-triangle:before {
+	transform: rotate(175deg) translate(15px, 15px);
 }
 
-.box-icon-caption a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+.box-icon-classic:hover .decorate-circle:before {
+	transform: translate(-45px, 2px);
 }
 
-/* Estilo para el formulario de contacto */
-.rd-form {
-    margin-top: 50px; /* Margen superior */
+.box-icon-classic:hover .decorate-rectangle:before {
+	transform: rotate(-90deg) translateY(-40px);
 }
 
-.form-wrap {
-    margin-bottom: 20px; /* Margen inferior */
+.box-icon-caption h4 {
+	font-weight: 500;
 }
 
-.form-label {
-    display: block; /* Convertir etiqueta en bloque */
-    margin-bottom: 5px; /* Margen inferior */
+.box-icon-caption *+p {
+	margin-top: 20px;
+}
+.box-icon-modern .box-icon-caption *+p {
+	margin-top: 5px;
+}
+.post-corporate.post-corporate-img-bg .box-icon-caption p,
+.section-main-bunner .box-icon-caption p,
+.context-dark .box-icon-caption p,
+.bg-gray-600 .box-icon-caption p,
+.bg-gray-700 .box-icon-caption p,
+.bg-gray-800 .box-icon-caption p,
+.bg-primary .box-icon-caption p,
+.bg-pink .box-icon-caption p,
+.bg-secondary .box-icon-caption p,
+.bg-secondary-2 .box-icon-caption p,
+.bg-green .box-icon-caption p {
+	color: rgba(255, 255, 255, 0.8);
 }
 
-.form-input {
-    width: 100%; /* Ancho completo */
-    padding: 10px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 5px; /* Borde redondeado */
+#form-output-global {
+	position: fixed;
+	bottom: 30px;
+	left: 15px;
+	z-index: 2000;
+	visibility: hidden;
+	transform: translate3d(-500px, 0, 0);
+	transition: .3s all ease;
 }
 
-.button {
-    display: inline-block; /* Convertir botón en bloque */
-    padding: 10px 20px; /* Espaciado interno */
-    background-color: #007bff; /* Color de fondo */
-    color: #ffffff; /* Color de texto */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cursor apuntador */
-    transition: background-color 0.3s; /* Transición suave del color de fondo */
+#form-output-global.active {
+	visibility: visible;
+	transform: translate3d(0, 0, 0);
 }
 
-.button:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+@media (min-width: 576px) {
+	#form-output-global {
+		left: 30px;
+	}
 }
